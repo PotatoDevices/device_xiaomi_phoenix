@@ -73,4 +73,4 @@
 /dev/mius(.*)?                                                       u:object_r:ultrasound_device:s0
 
 # Power
-/(vendor/bin/hw/android\.hardware\.power-service-qti                 u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service-qti                 u:object_r:hal_power_default_exec:s0
