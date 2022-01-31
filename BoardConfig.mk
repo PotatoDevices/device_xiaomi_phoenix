@@ -88,7 +88,7 @@ TARGET_USES_HWC2 := true
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/fs/config.fs
 
 # FM
 BOARD_HAS_QCA_FM_SOC := "cherokee"
