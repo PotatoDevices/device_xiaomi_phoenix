@@ -4,8 +4,10 @@
    "target_path": "vendor/xiaomi/phoenix"
  },
  {
-   "repository": "kernel_xiaomi_phoenix",
+   "repository": "arcadia-oss/sm6150",
    "target_path": "kernel/xiaomi/phoenix"
+   "remote": "github",
+   "branch": "S"
  },
  {
    "repository": "ArrowOS-Devices/android_device_xiaomi_extras",
