@@ -510,15 +510,11 @@ PRODUCT_PACKAGES += \
     libjson \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2 \
-    rild
+    libxml2
 
 # Seccomp
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/seccomp/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
-    $(LOCAL_PATH)/configs/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    $(LOCAL_PATH)/configs/seccomp/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    $(LOCAL_PATH)/configs/seccomp/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
+    $(LOCAL_PATH)/configs/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
 
 # Sensor
 PRODUCT_PACKAGES += \
@@ -528,10 +524,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
-# Shims
-PRODUCT_PACKAGES += \
-    lib-imsvt
-
 # Soter
 PRODUCT_PACKAGES += \
     libhwbinder.vendor
@@ -540,11 +532,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
     qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper-prd \
     qti_telephony_hidl_wrapper.xml \
+    qti-telephony-hidl_wrapper_prd.xml \
     qti-telephony-utils \
+    qti-telephony-utils-prd \
     qti_telephony_utils.xml \
-    telephony-ext \
+    qti_telephony_utils_prd.xml \
+    telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext

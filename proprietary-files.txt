@@ -966,6 +966,7 @@ vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
 vendor/etc/init/qcrild.rc|17cf4934bf443cf6469d8b3ff622eeb0e4a0aac6
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
+vendor/etc/seccomp_policy/atfwd@2.0.policy|74fdb7d47bdb6d0cb06b13701a96a76c9171ab5d
 vendor/lib64/deviceInfoServiceModule.so|d9c829e17f043facc78d142c20a644a37261f777
 vendor/lib64/libconfigdb.so|fd3408904206b85a61a01585022c7ecc71e98516
 vendor/lib64/libdsi_netctrl.so|e21d767177441f9dfa5e2199f1bec99223870c0e
@@ -1088,6 +1089,7 @@ vendor/etc/init/ims_rtp_daemon.rc|06510e936890f51aeb76f2cf3ed5dbe45e67ac20
 vendor/etc/init/imsdatadaemon.rc|29face37c174aebcd1358f7d7ad0bd4baf83063b
 vendor/etc/init/imsqmidaemon.rc|dda16d842b7c65296e97bc9921b723a43b152ba3
 vendor/etc/init/imsrcsd.rc|2dc42ff6e4b6dd389bd3bc9a7af30dec2f1a45df
+vendor/etc/seccomp_policy/imsrtp.policy|7ea8b4012da7bde98fc91bd882185b32784793cc
 vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so|e7bdf5fb5fba0c3e71ef73e79c53922a7eddd989
 vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so|79bcaaa1aa0e05ba1595d0dab3d2bbc7d194c19b
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so|58d6243700e63d450599a29f3aaefbeee526fd7f
