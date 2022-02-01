@@ -39,10 +39,9 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.service \
-    android.hardware.audio.common@6.0-util \
-    android.hardware.audio.effect@6.0-impl \
     android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
     audio.a2dp.default \
     audio.primary.sm6150:32 \
     audio.r_submix.default \
@@ -119,7 +118,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libdng_sdk.vendor \
@@ -127,15 +125,13 @@ PRODUCT_PACKAGES += \
     libxml2 \
     GCamGOPrebuilt \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    android.hidl.memory.block@1.0 \
     android.hidl.memory.block@1.0.vendor \
     libstdc++.vendor
 
 # Crypto
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.keymaster@4.1.vendor \
-    android.hardware.keymaster@4.0.vendor
+    android.hardware.keymaster@4.1.vendor
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -179,9 +175,6 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm@1.2.vendor \
-    android.hardware.drm@1.1.vendor \
-    android.hardware.drm@1.0.vendor \
     android.hardware.drm@1.4-service.clearkey
 
 # fastbootd
@@ -232,13 +225,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0.vendor \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@1.2.vendor \
-    android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss@3.0.vendor \
-    android.hardware.gnss@2.1-impl-qti:64 \
+    android.hardware.gnss@2.1-impl-qti \
     android.hardware.gnss@2.1-service-qti \
     libbatching \
     libgeofencing \
@@ -338,14 +326,7 @@ PRODUCT_PACKAGES += \
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3 \
     android.hardware.neuralnetworks@1.3.vendor \
-    android.hardware.neuralnetworks@1.2 \
-    android.hardware.neuralnetworks@1.2.vendor \
-    android.hardware.neuralnetworks@1.1 \
-    android.hardware.neuralnetworks@1.1.vendor \
-    android.hardware.neuralnetworks@1.0 \
-    android.hardware.neuralnetworks@1.0.vendor
 
 # Net
 PRODUCT_PACKAGES += \
@@ -481,9 +462,9 @@ PRODUCT_PACKAGES += \
 # RIL
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor \
-    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.6.vendor \
     android.hardware.secure_element@1.2.vendor \
     libjson \
     libprotobuf-cpp-full \
@@ -508,10 +489,6 @@ PRODUCT_PACKAGES += \
 # Shims
 PRODUCT_PACKAGES += \
     lib-imsvt
-
-# Soter
-PRODUCT_PACKAGES += \
-    libhwbinder.vendor
 
 # Telephony
 PRODUCT_PACKAGES += \
@@ -554,7 +531,6 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.5.vendor \
     android.hardware.wifi@1.0-service \
     hostapd \
     libwifi-hal-ctrl \
