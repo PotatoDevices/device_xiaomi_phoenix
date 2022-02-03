@@ -382,11 +382,8 @@ PRODUCT_PACKAGES += \
     SettingsProvidorOverlayPhoenix \
     SystemUIOverlayPhoenix \
     TelephonyOverlayPhoenix \
-    TelephonyProviderOverlayPhoenix \
     TetheringConfigOverlay \
     WifiOverlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Permissions
 PRODUCT_COPY_FILES += \
