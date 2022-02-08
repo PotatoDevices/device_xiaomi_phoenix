@@ -38,6 +38,7 @@ ro.surface_flinger.max_virtual_display_dimension=4096
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+debug.renderengine.backend=skiaglthreaded
 
 #GBoard
 ro.com.google.ime.kb_pad_port_b=1
@@ -88,7 +89,7 @@ arm64.memtag.process.system_server=off
 persist.vendor.delta_time.enable=true
 
 # Wireless display
-debug.sf.latch_unsignaled=0
+debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
