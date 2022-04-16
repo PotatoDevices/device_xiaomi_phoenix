@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/hentai_phoenix.mk
+    $(LOCAL_DIR)/phoenix.mk
