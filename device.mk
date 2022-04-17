@@ -14,13 +14,14 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/phoenix/phoenix-vendor.mk)
 
-# Include PSU if synced
-$(call inherit-product-if-exists, vendor/google/psu/google-psu.mk)
-
 PRODUCT_BUILD_SUPER_PARTITION := false
 BOARD_BUILD_PRODUCT_IMAGE := true
 PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Platform
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := sm6150
 
 # AAPT config
 PRODUCT_AAPT_CONFIG := normal

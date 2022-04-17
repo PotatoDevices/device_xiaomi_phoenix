@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The Styx Project
+# Copyright (C) 2022 Potato Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ $(call inherit-product, device/xiaomi/phoenix/device.mk)
 $(call inherit-product, vendor/styx/config/common.mk)
 
 # Device identifiers
-PRODUCT_NAME := phoenix
+PRODUCT_NAME := potato_phoenix
 PRODUCT_DEVICE := phoenix
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X2
